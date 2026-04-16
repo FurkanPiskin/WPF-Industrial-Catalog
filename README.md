@@ -49,6 +49,27 @@ A high-performance, offline-first desktop application built with **WPF, C#**, an
 
 Follow these steps to run the application locally with the dummy dataset:
 
-1. **Clone the repository:**
+1. **Clone the Repository:**
    ```bash
    git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
+2. **Database Preparation:**
+
+Open Microsoft SQL Server Management Studio (SSMS) and create a new database named FerraFilterDB.
+
+Open the Setup_DummyDatabase.sql file located in the project folder and execute it on this new database. This will create the required table structures and insert the mock data.
+
+3. **Connection String Configuration:**
+
+Open the project in Visual Studio.
+
+Locate the App.config file (or FerraFilterApp.dll.config if using the compiled release).
+
+Find the connection string and update the Data Source=... parameter with your local SQL Server instance name. Save the file.
+
+4. **Build and Test:**
+
+Double-click the FerraFilterApp.sln file to load the solution in Visual Studio.
+
+Press F5 to build and launch the application.
+
+Type one of the dummy competitor numbers (e.g., ACME-9901 or FAKE-13) into the search bar to verify the offline database connection and image rendering are working correctly.
