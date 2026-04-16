@@ -1,0 +1,42 @@
+﻿<Page x:Class="FerraFilterApp.CrossReferencePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:av="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      mc:Ignorable="av" 
+      Title="Çapraz Referanslar" Background="#F9F9F9" 
+      av:DesignHeight="467.779" av:DesignWidth="944.94">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,15">
+            <Button x:Name="btnOemNo" Content="OEM NO" Width="120" Height="35" 
+                    Background="#CC0000" Foreground="White" FontWeight="Bold" 
+                    BorderThickness="0" Click="btnOemNo_Click" Cursor="Hand"/>
+
+            <Button x:Name="btnUretici" Content="ÜRETİCİ" Width="120" Height="35" 
+                    Background="#E0E0E0" Foreground="#666666" FontWeight="Bold" 
+                    BorderThickness="0" Margin="5,0,0,0" Click="btnUretici_Click" Cursor="Hand"/>
+        </StackPanel>
+
+        <ComboBox x:Name="cmbMarkaFiltre" Grid.Row="2" Width="250" HorizontalAlignment="Left" 
+                  Margin="0,0,0,15" Padding="8" FontSize="14" SelectionChanged="cmbMarkaFiltre_SelectionChanged" />
+
+        <DataGrid x:Name="dgReferanslar" Grid.Row="3" AutoGenerateColumns="False" 
+                  IsReadOnly="True" Background="White" BorderBrush="#DDD" HeadersVisibility="None"
+                  GridLinesVisibility="Horizontal" RowHeight="35" FontSize="14">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Uretici}" Width="*" FontWeight="SemiBold"/>
+                <DataGridTextColumn Binding="{Binding RakipNo}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

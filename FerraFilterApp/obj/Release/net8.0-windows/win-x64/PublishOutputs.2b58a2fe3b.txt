@@ -1,0 +1,9 @@
+C:\Users\bozku\Desktop\FerraApp\FerraFilterApp.pdb
+C:\Users\bozku\Desktop\FerraApp\FerraFilterApp.dll.config
+C:\Users\bozku\Desktop\FerraApp\D3DCompiler_47_cor3.dll
+C:\Users\bozku\Desktop\FerraApp\PenImc_cor3.dll
+C:\Users\bozku\Desktop\FerraApp\PresentationNative_cor3.dll
+C:\Users\bozku\Desktop\FerraApp\vcruntime140_cor3.dll
+C:\Users\bozku\Desktop\FerraApp\wpfgfx_cor3.dll
+C:\Users\bozku\Desktop\FerraApp\sni.dll
+C:\Users\bozku\Desktop\FerraApp\FerraFilterApp.exe
