@@ -16,11 +16,13 @@ A high-performance, offline-first desktop application built with **WPF, C#**, an
 
 ## 📸 Screenshots
 
-*(Ekranda uygulamanın ana arama sayfasını gösteren bir görsel ekle)*
-![Search Screen](link_to_your_search_screenshot.png)
 
-*(Ekranda ürün detaylarını ve fotoğrafını gösteren bir görsel ekle)*
-![Product Detail Screen](link_to_your_detail_screenshot.png)
+![Search Screen](Screenshots/1.jpg)
+
+
+![Product Detail Screen1](Screenshots/2.jpg)
+
+![Product Detail Screen2](Screenshots/3.jpg)
 
 ---
 
